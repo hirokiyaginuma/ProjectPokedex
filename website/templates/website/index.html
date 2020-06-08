@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Pokedex</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+		<div class="topnav" id="topnav">
+			<a href="/">Home</a>
+			<a href="{% url 'Starter_Pokemon' %}">Starter Pokemon</a>
+			<a href="{% url 'about_me' %}">About Me</a>
+			<a href="javascript:void(0);" class="icon" onclick="icon()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		
+        <div class="header">
+            <h1><a href="index.html">Pokedex - Find your favorite Pokemon!</a></h1>
+        </div>
+
+        <div class="content">
+			<p></p>
+            <div id="FirstParagraph">
+				<p>Explore Pokedex and find your favorite pokemon!</p>
+			</div>
+			<div class="paragraph">
+				<h2>What is Pokedex?</h2>
+				<p>The Pokedex is a digital encyclopedia created by Professor Oak as an invaluable tool to Trainers in 
+				Pokemon world. It gives information about all pokemons in the world that are contained in its database.
+				It is an important item in the game, and one of the goals in the game is to complete the Pokedex.
+				In this website, you can find pokemon like real Pokedex!</p>
+			</div>
+			<div class="paragraph">
+				<h2>Where do I start?</h2>
+				<p>Pick your first pokemon <a href="Starter_Pokemon.html">here</a>!</p>
+			</div>
+        </div>	
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="{% static 'js/script.js' %}"></script>
+		
+    </body>
+</html>

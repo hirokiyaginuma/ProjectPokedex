@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Pokedex - Starter Pokemon</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+		<div class="topnav" id="topnav">
+			<a href="/">Home</a>
+			<a href="{% url 'Starter_Pokemon' %}">Starter Pokemon</a>
+			<a href="{% url 'about_me' %}">About Me</a>
+			<a href="javascript:void(0);" class="icon" onclick="icon()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		
+        <div class="header">
+            <h1><a href="index.html">Pokedex - Starter Pokemon</a></h1>
+        </div>
+
+        <div class="content">
+			<p></p>
+			<div class="paragraph">
+				<h2>What is starter pokemon?</h2>
+				<p>Starter Pokemon are the Pokemon a trainer chooses at the beginning of their Pokemon 
+				journey. In each generation of Pokémon games, a set of Starter Pokémon are available 
+				for new trainers to choose from in sets of three.</p>
+			</div>
+			<hr>
+			
+            <div class="pokedex">
+				<div id="1stGen">
+					<h2>1st Generation</h2>
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							oo1: Bulbasaur
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n001.png' %}" alt="001" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Seed Pokemon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>001</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.7 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>6.9 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Grass Poison</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">フシギダネ Fushigidane</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Bulbizarre</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Bulbasaur</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Bisasam</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Bulbasaur</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">이상해씨 Isanghessi</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">妙蛙種子 Miuhwājúngjí</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">妙蛙種子 / 妙蛙种子 Miàowāzhǒngzǐ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>
+					
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							oo4: Charmander
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n004.png' %}" alt="004" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Lizard Pokemon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>004</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.6 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>8.5 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Fire</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">ヒトカゲ Hitokage</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Salamèche</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Charmander</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Glumanda</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Charmander</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">파이리 Pairi</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">小火龍 Síufólùhng</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">小火龍 / 小火龙 Xiǎohǔolóng</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>
+					
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							oo7: Squirtle
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n007.png' %}" alt="007" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Tiny Turtle Pokémon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>007</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.5 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>9.0 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Water</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">ゼニガメ Zenigame</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Carapuce</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Squirtle</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Schiggy</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Squirtle</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">꼬부기 Kkobugi</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">傑尼龜 Gihtnèihgwāi</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">傑尼龜 / 杰尼龟 Jiéníguī</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>				
+				</div>
+				<hr>
+				
+				<div id="2ndGen">
+					<h2>2nd Generation</h2>
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							152: Chikorita
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n152.png' %}" alt="152" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Leaf Pokemon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>152</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.9 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>6.4 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Grass Poison</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">チコリータ Chicorita</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Germignon</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Chikorita</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Endivie</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Chikorita</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">치코리타 Chikorita</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">菊草葉 Gūkchóuyihp</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">菊草葉 / 菊草叶 Júcăoyè</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>
+					
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							155: Cyndaquil
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n155.png' %}" alt="155" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Fire Mouse Pokemon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>155</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.5 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>7.9 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Fire</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">ヒノアラシ Hinoarashi</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Héricendre</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Cyndaquil</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Feurigel</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Cyndaquil</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">브케인 Beukein</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">火球鼠 Fókàuhsyú</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">火球鼠 Huŏqiúshŭ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>
+					
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							158: Totodile
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n158.png' %}" alt="158" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Big Jaw Pokémon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>158</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.6 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>9.5 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Water</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">ワニノコ Waninoko</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Kaiminus</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Totodile</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Karnimani</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Totodile</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">리아코 Liako</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">小鋸鱷 Síugeuingohk</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">小鋸鱷 / 小锯鳄 Xiǎojù'è</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>				
+				</div>
+				<hr>
+				
+				<div id="3rdGen">
+					<h2>3rd Generation</h2>
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							252: Treecko
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n252.png' %}" alt="252" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Wood Gecko Pokemon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>252</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.5 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>5.0 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Grass Poison</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">キモリ Kimori</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Arcko</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Treecko</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Geckarbor</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Treecko</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">무지기 Namujigi</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">木守宮 Muhksáugūng</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">木守宮 Mùshǒugōng</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>
+					
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							255: Torchic
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n255.png' %}" alt="255" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Chick Pokemon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>255</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.4 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>2.5 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Fire</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">アチャモ Achamo</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Poussifeu</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Torchic</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Flemmli</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Torchic</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">아차모 Achamo</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">火稚雞 Fójihgāi</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">火稚雞 / 火稚鸡 Huǒzhìjī</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>
+					
+					<div class="pokemon">
+						<div class="name">
+							<h3>
+							258: Mudkip
+							</h3>
+						</div>
+						<div class="image">
+							<img src="{% static 'img/n258.png' %}" alt="258" width="200">
+						</div>
+						<div class="stats">
+							<table>
+								<tr>
+									<th colspan="2">Mud Fish Pokémon</th>
+								</tr>
+								<tr>
+									<td>No.</td>
+									<td>258</td>
+								</tr>
+								<tr>
+									<td>Height</td>
+									<td>0.4 m</td>
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>7.6 kg</td>
+								</tr>
+								<tr>
+									<td>Type</td>
+									<td>Water</td>
+								</tr>
+							</table>
+							<p></p>
+						</div>
+						<button class="accordion">Name in other language</button>
+						<div class="panel">
+							<div class="container">
+								<div class="row">
+									<div class="col col1">Japanese</div>
+									<div class="col col2">ミズゴロウ Mizugorou</div>
+									<div class="w-100"></div>
+									<div class="col col1">French</div>
+									<div class="col col2">Gobou</div>
+									<div class="w-100"></div>
+									<div class="col col1">Spanish</div>
+									<div class="col col2">Mudkip</div>
+									<div class="w-100"></div>
+									<div class="col col1">German</div>
+									<div class="col col2">Hydropi</div>
+									<div class="w-100"></div>
+									<div class="col col1">Italian</div>
+									<div class="col col2">Mudkip</div>
+									<div class="w-100"></div>
+									<div class="col col1">Korean</div>
+									<div class="col col2">물짱이 Muljjangi</div>
+									<div class="w-100"></div>
+									<div class="col col1">Cantonese Chinese</div>
+									<div class="col col2">水躍魚 Séuiyeukyùh</div>
+									<div class="w-100"></div>
+									<div class="col col1">Mandarin Chinese</div>
+									<div class="col col2">水躍魚 / 水跃鱼 Shuǐyuèyú</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p></p>				
+				</div>
+				<hr>
+				
+			</div>
+        </div>
+		
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+	
+    </body>
+		
+</html>
